@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopfast</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #2d2d2d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: white;
+        }
+        
+        .container {
+            display: flex;
+            max-width: 1000px;
+            gap: 40px;
+        }
+
+        .left {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            color: white;
+        }
+
+        .left h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        .left p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        .images {
+            display: flex;
+            gap: 50px;
+        }
+
+        .images img {
+            width: 170px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .right {
+            background-color: #3c3c3c;
+            padding: 30px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .right h2 {
+            margin-bottom: 20px;
+            font-weight: 300;
+        }
+
+        .right form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .right input[type="email"], .right input[type="password"] {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .right button {
+            background-color: #5a5a5a;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .right .social-login {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+
+        .social-login img {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>Ouça Alto,<br>Viva Intensamente.</h1>
+            <p>Os Fones que Unem Som e Estilo, Criando Experiências Incríveis Juntos.</p>
+            <div class="images">
+                <img src="https://th.bing.com/th/id/OIP.nOOKdv4DT1_qkHJYFXi1SAHaE7?w=271&h=175&c=7&r=0&o=5&pid=1.7" alt="Imagem 1">
+                <img src="https://th.bing.com/th/id/OIP.Yz9bybsYI6TkTz_1IlyiKgHaDt?w=350&h=175&c=7&r=0&o=5&pid=1.7" alt="Imagem 2">
+                <img src="https://th.bing.com/th/id/OIP.0xPmf1u3mxNsMbABJ8qswwHaE7?w=257&h=180&c=7&r=0&o=5&pid=1.7" alt="Imagem 3">
+            </div>
+        </div>
+
+        <div class="right">
+            <h2>LOGIN</h2>
+            <form>
+                <input type="email" placeholder="E-mail">
+                <input type="password" placeholder="Senha">
+                <button type="submit">Entrar</button>
+            </form>
+            <p>Não possui uma conta?</p>
+            <button>Registre-se</button>
+            <div class="social-login">
+                <img src="https://cdn-icons-png.flaticon.com/128/300/300221.png" alt="Login com Google">
+                <img src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png" alt="Login com Facebook">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
