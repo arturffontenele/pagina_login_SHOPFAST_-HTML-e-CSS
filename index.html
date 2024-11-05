@@ -87,7 +87,7 @@
             color: white;
             border: none;
             padding: 10px;
-            border-radius: 5px;
+          border-radius: 5px;
             cursor: pointer;
         }
 
@@ -97,11 +97,23 @@
             margin-top: 15px;
         }
 
-        .social-login img {
-            width: 40px;
-            height: 40px;
-            cursor: pointer;
+        .social-login1 img {
+         
+         
+            display: flex;
+            align-items: center;
+        
+          
         }
+
+       .google, .facebook{
+        width: 30px;
+        height: 30px;
+
+
+        }
+
+        
 
     </style>
 </head>
@@ -126,10 +138,12 @@
             </form>
             <p>Não possui uma conta?</p>
             <button>Registre-se</button>
-            <div class="social-login">
-                <img src="https://cdn-icons-png.flaticon.com/128/300/300221.png" alt="Login com Google">
-                <img src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png" alt="Login com Facebook">
+            <div class="social-login1">
+            
+             <button type="submit"><img class="google" src="https://cdn-icons-png.flaticon.com/128/300/300221.png" alt="">Google</button> 
+             <button type="submit"><img class="facebook" src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png" alt="">Facebook</button>
             </div>
+           
         </div>
     </div>
 </body>
